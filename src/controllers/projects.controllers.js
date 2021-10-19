@@ -1,4 +1,4 @@
-const getAllProject = async (req, res) => {
+const getAllProjects = async (req, res) => {
   res.send({ message: "voici tous les projets" });
 };
 const getProjectById = async (req, res) => {
@@ -21,7 +21,7 @@ const deleteProjectById = async (req, res) => {
       "la suppression du projet " + req.params.id + " a ete faite avec succes",
   });
 };
-const deleteAllProject = async (req, res) => {
+const deleteAllProjects = async (req, res) => {
   res.send({ message: "tous les projets ont ete supprimes" });
 };
 

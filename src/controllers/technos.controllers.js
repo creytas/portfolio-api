@@ -1,4 +1,4 @@
-const getAllTechno = async (req, res) => {
+const getAllTechnos = async (req, res) => {
   res.send({ message: "voici toutes les technos" });
 };
 const getTechnoById = async (req, res) => {
@@ -25,7 +25,7 @@ const deleteTechnoById = async (req, res) => {
       " a ete faite avec succes",
   });
 };
-const deleteAllTechno = async (req, res) => {
+const deleteAllTechnos = async (req, res) => {
   res.send({ message: "toutes les technos ont ete supprimes" });
 };
 
