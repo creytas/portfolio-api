@@ -6,7 +6,7 @@ const getUserById = async (req, res) => {
 };
 const newUser = async (req, res) => {
   res.send({
-    message: "la techno " + req.params.id + " a ete creee avec succes",
+    message: "la techno " + req.body.id + " a ete creee avec succes",
   });
 };
 const updateUser = async (req, res) => {

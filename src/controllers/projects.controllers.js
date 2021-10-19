@@ -6,7 +6,7 @@ const getProjectById = async (req, res) => {
 };
 const newProject = async (req, res) => {
   res.send({
-    message: "le projet " + req.params.id + " a ete creee avec succes",
+    message: "le projet " + req.body.id + " a ete creee avec succes",
   });
 };
 const updateProject = async (req, res) => {

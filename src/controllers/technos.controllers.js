@@ -6,7 +6,7 @@ const getTechnoById = async (req, res) => {
 };
 const newTechno = async (req, res) => {
   res.send({
-    message: "la techno " + req.params.id + " a ete creee avec succes",
+    message: "la techno " + req.body.id + " a ete creee avec succes",
   });
 };
 const updateTechno = async (req, res) => {
