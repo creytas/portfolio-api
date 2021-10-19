@@ -26,10 +26,10 @@ const deleteAllProjects = async (req, res) => {
 };
 
 module.exports = {
-  getAllProject,
+  getAllProjects,
   getProjectById,
   newProject,
   updateProject,
   deleteProjectById,
-  deleteAllProject,
+  deleteAllProjects,
 };

@@ -30,10 +30,10 @@ const deleteAllTechnos = async (req, res) => {
 };
 
 module.exports = {
-  getAllTechno,
+  getAllTechnos,
   getTechnoById,
   newTechno,
   updateTechno,
   deleteTechnoById,
-  deleteAllTechno,
+  deleteAllTechnos,
 };
