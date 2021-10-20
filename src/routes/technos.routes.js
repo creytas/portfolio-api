@@ -6,7 +6,7 @@ technoRoutes.get("/all", controller.getAllTechnos);
 technoRoutes.get("/:id", controller.getTechnoById);
 technoRoutes.post("/new-techno", controller.newTechno);
 technoRoutes.put("/update-techno/:id", controller.updateTechno);
-technoRoutes.delete("/delete-techno/:id", controller.deleteTechnoById);
 technoRoutes.delete("/delete-techno/all", controller.deleteAllTechnos);
+technoRoutes.delete("/delete-techno/:id", controller.deleteTechnoById);
 
 module.exports = technoRoutes;

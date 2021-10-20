@@ -10,12 +10,12 @@ personalInfoRoutes.put(
   controller.updatePersonalInfo
 );
 personalInfoRoutes.delete(
-  "/delete-personal-info/:id",
-  controller.deletePersonalInfoById
-);
-personalInfoRoutes.delete(
   "/delete-personal-info/all",
   controller.deleteAllPersonalInfos
+);
+personalInfoRoutes.delete(
+  "/delete-personal-info/:id",
+  controller.deletePersonalInfoById
 );
 
 module.exports = personalInfoRoutes;

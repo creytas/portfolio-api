@@ -1,18 +1,18 @@
 const getAllUsers = async (req, res) => {
-  res.send({ message: "voici toutes les technos" });
+  res.send({ message: "voici tous les utilisateurs" });
 };
 const getUserById = async (req, res) => {
-  res.send({ message: "voici la techno " + req.params.id + " ." });
+  res.send({ message: "voici l'utilisateur " + req.params.id + " ." });
 };
 const newUser = async (req, res) => {
   res.send({
-    message: "la techno " + req.body.id + " a ete creee avec succes",
+    message: "l'utilisateur " + req.body.id + " a ete creee avec succes",
   });
 };
 const updateUser = async (req, res) => {
   res.send({
     message:
-      "la mise a jour de la techno " +
+      "la mise a jour de l'utilisateur " +
       req.params.id +
       " a ete faite avec succes",
   });
@@ -20,13 +20,13 @@ const updateUser = async (req, res) => {
 const deleteUserById = async (req, res) => {
   res.send({
     message:
-      "la suppression de la techno " +
+      "la suppression de l'utilisateur " +
       req.params.id +
       " a ete faite avec succes",
   });
 };
 const deleteAllUsers = async (req, res) => {
-  res.send({ message: "toutes les technos ont ete supprimes" });
+  res.send({ message: "tous les utilisateurs ont ete supprimes" });
 };
 
 module.exports = {

@@ -6,7 +6,7 @@ userRoutes.get("/all", controller.getAllUsers);
 userRoutes.get("/:id", controller.getUserById);
 userRoutes.post("/new-user", controller.newUser);
 userRoutes.put("/update-user/:id", controller.updateUser);
-userRoutes.delete("/delete-user/:id", controller.deleteUserById);
 userRoutes.delete("/delete-user/all", controller.deleteAllUsers);
+userRoutes.delete("/delete-user/:id", controller.deleteUserById);
 
 module.exports = userRoutes;
