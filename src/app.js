@@ -7,6 +7,7 @@ const projectRoutes = require("./routes/projects.routes");
 const skillRoutes = require("./routes/skills.routes");
 const studyRoutes = require("./routes/studies_information.routes");
 const technoRoutes = require("./routes/technos.routes");
+const technoProjectRoutes = require("./routes/techno_project.routes");
 const userRoutes = require("./routes/users.routes");
 
 const app = express();
@@ -20,6 +21,7 @@ app.use(path.projectBaseURI, projectRoutes);
 app.use(path.skillBaseURI, skillRoutes);
 app.use(path.studiesInfoBaseURI, studyRoutes);
 app.use(path.technoBaseURI, technoRoutes);
+app.use(path.technoProjectBaseURI, technoProjectRoutes);
 app.use(path.userBaseURI, userRoutes);
 
 app.listen(PORT, () => {
