@@ -2,11 +2,11 @@ const express = require("express");
 const technoRoutes = express.Router();
 const controller = require("../controllers/technos.controllers");
 
-technoRoutes.get("/all", controller.getAllTechnos);
+technoRoutes.get("/", controller.getAllTechnos);
 technoRoutes.get("/:id", controller.getTechnoById);
-technoRoutes.post("/new-techno", controller.newTechno);
-technoRoutes.put("/update-techno/:id", controller.updateTechno);
-technoRoutes.delete("/delete-techno/all", controller.deleteAllTechnos);
-technoRoutes.delete("/delete-techno/:id", controller.deleteTechnoById);
+technoRoutes.post("/", controller.newTechno);
+technoRoutes.put("/:id", controller.updateTechno);
+technoRoutes.delete("/", controller.deleteAllTechnos);
+technoRoutes.delete("/:id", controller.deleteTechnoById);
 
 module.exports = technoRoutes;

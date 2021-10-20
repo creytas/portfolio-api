@@ -2,20 +2,11 @@ const express = require("express");
 const personalInfoRoutes = express.Router();
 const controller = require("../controllers/personal_information.controllers");
 
-personalInfoRoutes.get("/all", controller.getAllPersonalInfos);
+personalInfoRoutes.get("/", controller.getAllPersonalInfos);
 personalInfoRoutes.get("/:id", controller.getPersonalInfoById);
-personalInfoRoutes.post("/new-personal-info", controller.newPersonalInfo);
-personalInfoRoutes.put(
-  "/update-personal-info/:id",
-  controller.updatePersonalInfo
-);
-personalInfoRoutes.delete(
-  "/delete-personal-info/all",
-  controller.deleteAllPersonalInfos
-);
-personalInfoRoutes.delete(
-  "/delete-personal-info/:id",
-  controller.deletePersonalInfoById
-);
+personalInfoRoutes.post("/", controller.newPersonalInfo);
+personalInfoRoutes.put("/:id", controller.updatePersonalInfo);
+personalInfoRoutes.delete("/", controller.deleteAllPersonalInfos);
+personalInfoRoutes.delete("/:id", controller.deletePersonalInfoById);
 
 module.exports = personalInfoRoutes;

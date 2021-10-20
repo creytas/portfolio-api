@@ -2,17 +2,11 @@ const express = require("express");
 const collaboRoutes = express.Router();
 const controller = require("../controllers/collaborators.controllers");
 
-collaboRoutes.get("/all", controller.getAllCollaborators);
+collaboRoutes.get("/", controller.getAllCollaborators);
 collaboRoutes.get("/:id", controller.getCollaboratorById);
-collaboRoutes.post("/new-collaborator", controller.newCollaborator);
-collaboRoutes.put("/update-collaborator/:id", controller.updateCollaborator);
-collaboRoutes.delete(
-  "/delete-collaborator/all",
-  controller.deleteAllCollaborators
-);
-collaboRoutes.delete(
-  "/delete-collaborator/:id",
-  controller.deleteCollaboratorById
-);
+collaboRoutes.post("/", controller.newCollaborator);
+collaboRoutes.put("/:id", controller.updateCollaborator);
+collaboRoutes.delete("/", controller.deleteAllCollaborators);
+collaboRoutes.delete("/:id", controller.deleteCollaboratorById);
 
 module.exports = collaboRoutes;
